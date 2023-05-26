@@ -22,4 +22,4 @@ function App() {
 
 export default App;
 
-//test
+//casi responsive al 100%

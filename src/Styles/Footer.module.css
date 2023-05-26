@@ -3,7 +3,6 @@
 }
 .listaFooter{
     background-color: rgb(112, 109, 117);
-    /*background-color: rgb(7, 10, 7); footer mas oscuro*/
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -29,6 +28,7 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
+    position: static;
 }
 
 .git:hover{
@@ -51,3 +51,22 @@ a{
     text-decoration: none;
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .listaFooter {
+      align-items: center;
+      padding: 0px;
+    }
+  
+    .listaFooter li {
+      margin-top: 10px;
+    }
+    .listaFooter li{
+        font-size: 30px;
+    }
+    footer{
+        margin: 100px 0px 0px 0px;
+        position: fixed;
+    }
+  }

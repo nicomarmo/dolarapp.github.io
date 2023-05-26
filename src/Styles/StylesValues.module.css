@@ -20,4 +20,48 @@
 section div h3{
     margin: 10px 0px 10px 0px;
 }
-
+@media (max-width: 900px){
+    .mainSquare {
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;     
+      }
+      .mainSquare > div > div {
+          display: flex;
+          justify-content: space-evenly;
+      }
+      .lastUpdate{
+          margin: 2px 15px auto auto ;
+          font-size:10px;
+      }
+}
+@media (max-width: 768px) {
+    .mainSquare {
+      margin: 30px;
+      padding: 10px;
+      font-size: 15px;
+    }
+    .mainSquare > div > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .lastUpdate{
+        margin: 2px 15px auto auto ;
+        font-size:10px;
+    }
+  }
+  @media (max-width: 480px) {
+    .mainSquare {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;     
+    }
+    .mainSquare > div > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .lastUpdate{
+        margin: 2px 15px auto auto ;
+        font-size:10px;
+    }
+  }
