@@ -1,0 +1,23 @@
+.mainSquare{
+    background-color: rgb(124, 109, 120);
+    margin: 50px 100px 0px 100px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+}
+
+.lastUpdate{
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+section div h3{
+    margin: 10px 0px 10px 0px;
+}
+

@@ -1,0 +1,55 @@
+input{
+    background-color: rgb(124, 109, 120);
+
+    margin: auto;
+    width: 99.8%;
+    max-height: 5vh;
+
+    text-align: center;
+
+    border: 0;
+    outline: none;
+    font-size: 30px;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.89) inset;
+    -webkit-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.89) inset;
+    -moz-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.89) inset;
+}
+
+.inputSquare{
+    background-color: rgb(165, 155, 162);
+    border-radius: 8px 8px 25px 25px;
+    
+    margin: auto;
+    max-height: 28vh;
+    max-width: 90%;
+
+    box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 5px 6px 9px 0px rgba(0,0,0,0.8);
+
+}
+
+.tituloCalcu{
+    text-align: center;
+    color: white;
+    margin: 80px 0px 50px 0px;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.7);
+}
+
+.resultado{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px auto auto auto;
+    padding: 0px 0px 10px 20px;
+    list-style: none;
+}
+
+ul{
+    padding: 0px 0px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
