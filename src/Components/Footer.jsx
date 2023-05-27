@@ -15,10 +15,10 @@ const Footer = () => {
             <a href="https://github.com/nicomarmo" target="_blank" rel="noopener noreferrer"><GoMarkGithub className={Estilos.git} /></a>
           </li>
           <li>
-            <a href="https://github.com/nicomarmo/DolarApp" target="_blank" rel="noopener noreferrer"><GoCode className={Estilos.code} /></a>
+            <a href="https://github.com/nicomarmo/dolarapp.github.io" target="_blank" rel="noopener noreferrer"><GoCode className={Estilos.code} /></a>
           </li>
           <li>
-            <a href="https://github.com/nicomarmo/dolarapp.github.io" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin className={Estilos.linke} /></a>
+            <a href="https://www.linkedin.com/in/marmonicolas/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin className={Estilos.linke} /></a>
           </li>
           <li>
             <a href="https://www.fifa.com/es/tournaments/mens/worldcup/1978argentina" target="_blank" rel="noopener noreferrer"><GoStar className={Estilos.star} /></a>

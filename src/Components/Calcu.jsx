@@ -33,25 +33,25 @@ const Calcu = () => {
     const totalMultiEuroBlue = apiValueEuroBlue * inputValue
     const totalMultiEuroOficial = apiValueEuroOficial * inputValue // Multiplico ambos valores
 
-    console.log(totalMultiBlue + ' Valor de multi')
-    console.log('-------')
-    console.log(inputValue + ' Valor del input')
-    console.log('-------')
-    console.log(apiValueBlue + ' Valor de la api')
-    console.log('-------') //console.log de pruebas
+    // console.log(totalMultiBlue + ' Valor de multi')
+    // console.log('-------')
+    // console.log(inputValue + ' Valor del input')
+    // console.log('-------')
+    // console.log(apiValueBlue + ' Valor de la api')
+    // console.log('-------') //console.log de pruebas
 
   return (
     <Fragment>
         <h2 className={Estilos.tituloCalcu}>Calculadora de Conversión</h2>
-      <div className={Estilos.inputSquare}>
         <form>
-          <input type="text" pattern="[0-9]*" inputMode="numeric" name='num' autoComplete="off" onChange={multiplicacion}/> 
+          <input type="text" pattern="[0-9]*" placeholder='Ingrese un valor en dolares' inputMode="numeric" name='num' autoComplete="off" onChange={multiplicacion}/> 
         </form>
+      <div className={Estilos.inputSquare}>
         <ul>
-            <li className={Estilos.resultado}>Dolar Blue: ${totalMultiBlue}</li>
-            <li className={Estilos.resultado}>Dolar Oficial: ${totalMultiOficial}</li>
-            <li className={Estilos.resultado}>Euro Blue: ${totalMultiEuroBlue}</li>
-            <li className={Estilos.resultado}>Euro Oficial: ${totalMultiEuroOficial}</li>
+            <li className={Estilos.resultado}>Dolar Blue: $ {totalMultiBlue} ARS</li>
+            <li className={Estilos.resultado}>Dolar Oficial: $ {totalMultiOficial} ARS</li>
+            <li className={Estilos.resultado}>Euro Blue: $ {totalMultiEuroBlue} ARS</li>
+            <li className={Estilos.resultado}>Euro Oficial: $ {totalMultiEuroOficial} ARS</li>
         </ul>
       </div>
     </Fragment>
