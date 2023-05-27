@@ -65,12 +65,23 @@ ul{
     .resultado{
       font-size: 15px;
     }
+    .inputSquare ul {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+    ul{
+      display: flex;
+      align-items: start;
+    }
 
   }
   
   @media (max-width: 480px) {
     .inputSquare {
       max-height: 20vh;
+
     }
     .resultado {
       font-size: 20px;
@@ -83,6 +94,8 @@ ul{
     }
     .inputSquare ul {
       padding: 0px;
+      display: flex;
+      flex-direction: column;
     }
     input{
       max-width: 88.9vw;
