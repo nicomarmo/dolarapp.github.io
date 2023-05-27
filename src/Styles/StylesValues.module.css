@@ -37,7 +37,7 @@ section div h3{
 }
 @media (max-width: 768px) {
     .mainSquare {
-      margin: 30px;
+      margin: 25px;
       padding: 10px;
       font-size: 15px;
     }
@@ -54,7 +54,8 @@ section div h3{
     .mainSquare {
       font-size: 12px;
       display: flex;
-      flex-direction: column;     
+      flex-direction: column;
+      margin: 10px;     
     }
     .mainSquare > div > div {
         display: flex;
