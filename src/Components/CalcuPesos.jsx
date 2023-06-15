@@ -51,10 +51,10 @@ const CalcuPesos = (props) => {
         </div>
       <div className={Estilos.inputSquare}>
         <ul className={Estilos.lista}>
-            <li className={Estilos.resultado}>Dolar Blue: $ <b>{totalMultiBlue.toFixed(2)}</b> u$d</li>
-            <li className={Estilos.resultado}>Dolar Oficial: $ <b>{totalMultiOficial.toFixed(2)}</b> u$d</li>
-            <li className={Estilos.resultado}>Euro Blue: $ <b>{totalMultiEuroBlue.toFixed(2)}</b> u$d</li>
-            <li className={Estilos.resultado}>Euro Oficial: $ <b>{totalMultiEuroOficial.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Dolar Blue: <b>{totalMultiBlue.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Dolar Oficial: <b>{totalMultiOficial.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Euro Blue: <b>{totalMultiEuroBlue.toFixed(2)}</b> €</li>
+            <li className={Estilos.resultado}>Euro Oficial: <b>{totalMultiEuroOficial.toFixed(2)}</b> €</li>
         </ul>
       </div>
     </Fragment>

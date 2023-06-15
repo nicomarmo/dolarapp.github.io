@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="https://github.com/nicomarmo" target="_blank" rel="noopener noreferrer"><GoMarkGithub className={Estilos.git} /></a>
           </li>
           <li>
-            <p className={Estilos.dataDevFoot}>Develop by Nicolás Marmo</p>
+            <p className={Estilos.dataDevFoot}>Developed by Nicolás Marmo</p>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/marmonicolas/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin className={Estilos.linke} /></a>
