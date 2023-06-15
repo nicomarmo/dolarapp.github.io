@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Estilos from "../Styles/Calcu.module.css";
 
-const Calcu = (props) => {
+const CalcuPesos = (props) => {
 
     const [inputValue, setInputValue] = useState(0)
     const [apiValueBlue, setApiValueBlue] = useState(0);
@@ -28,10 +28,10 @@ const Calcu = (props) => {
 
     }
 
-    const totalMultiBlue = apiValueBlue * inputValue
-    const totalMultiOficial = apiValueOficial * inputValue
-    const totalMultiEuroBlue = apiValueEuroBlue * inputValue
-    const totalMultiEuroOficial = apiValueEuroOficial * inputValue // Multiplico ambos valores
+    const totalMultiBlue = inputValue / apiValueBlue
+    const totalMultiOficial = inputValue / apiValueOficial
+    const totalMultiEuroBlue = inputValue / apiValueEuroBlue
+    const totalMultiEuroOficial = inputValue / apiValueEuroOficial // Multiplico ambos valores
 
     // console.log(totalMultiBlue + ' Valor de multi')
     // console.log('-------')
@@ -44,21 +44,21 @@ const Calcu = (props) => {
     <Fragment>
         <h2 className={Estilos.tituloCalcu}>Calculadora de Conversión</h2>
         <form>
-          <input type="text" pattern="[0-9]*" placeholder='Ingrese un valor en dolares' inputMode="numeric" name='num' autoComplete="off" onChange={multiplicacion}/> 
+          <input type="text" pattern="[0-9]*" placeholder='Ingrese un valor en pesos' inputMode="numeric" name='num' autoComplete="off" onChange={multiplicacion}/> 
         </form>
         <div className={Estilos.botonContainer}>
-        <button className={Estilos.botonChange} onClick={props.changeMoney}>PESOS</button>
+        <button className={Estilos.botonChange} onClick={props.changeMoney}>DOLARES</button>
         </div>
       <div className={Estilos.inputSquare}>
         <ul className={Estilos.lista}>
-            <li className={Estilos.resultado}>Dolar Blue: $ <b>{totalMultiBlue.toFixed(2)}</b> ARS</li>
-            <li className={Estilos.resultado}>Dolar Oficial: $ <b>{totalMultiOficial.toFixed(2)}</b> ARS</li>
-            <li className={Estilos.resultado}>Euro Blue: $ <b>{totalMultiEuroBlue.toFixed(2)}</b> ARS</li>
-            <li className={Estilos.resultado}>Euro Oficial: $ <b>{totalMultiEuroOficial.toFixed(2)}</b> ARS</li>
+            <li className={Estilos.resultado}>Dolar Blue: $ <b>{totalMultiBlue.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Dolar Oficial: $ <b>{totalMultiOficial.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Euro Blue: $ <b>{totalMultiEuroBlue.toFixed(2)}</b> u$d</li>
+            <li className={Estilos.resultado}>Euro Oficial: $ <b>{totalMultiEuroOficial.toFixed(2)}</b> u$d</li>
         </ul>
       </div>
     </Fragment>
   );
 };
 
-export default Calcu;
+export default CalcuPesos;
