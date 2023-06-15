@@ -6,8 +6,8 @@ const Calcu = (props) => {
     const [inputValue, setInputValue] = useState(0)
     const [apiValueBlue, setApiValueBlue] = useState(0);
     const [apiValueOficial, setApiValueOficial] = useState(0);
-    const [apiValueEuroBlue, setApiValueEuroBlue] = useState(0);
-    const [apiValueEuroOficial, setApiValueEuroOficial] = useState(0);
+    // const [apiValueEuroBlue, setApiValueEuroBlue] = useState(0);
+    // const [apiValueEuroOficial, setApiValueEuroOficial] = useState(0);
 
     useEffect(()=>{
         const getData = async() => {
@@ -15,8 +15,8 @@ const Calcu = (props) => {
             const dolar_value = await info.json() // Consumo la API (no pude traer los datos del otro archivo)
             setApiValueBlue(dolar_value.blue.value_avg) // Le doy al estado apiValueBlue el valor del 'dolar blue'
             setApiValueOficial(dolar_value.oficial.value_avg) // Le doy al estado apiValueBlue el valor del 'dolar oficial'
-            setApiValueEuroBlue(dolar_value.blue_euro.value_avg) // Le doy al estado apiValueBlue el valor del 'euro blue'
-            setApiValueEuroOficial(dolar_value.oficial_euro.value_avg) // Le doy al estado apiValueBlue el valor del 'euro oficial'
+            // setApiValueEuroBlue(dolar_value.blue_euro.value_avg) // Le doy al estado apiValueBlue el valor del 'euro blue'
+            // setApiValueEuroOficial(dolar_value.oficial_euro.value_avg) // Le doy al estado apiValueBlue el valor del 'euro oficial'
         }
         getData()
     }, [])
@@ -30,8 +30,8 @@ const Calcu = (props) => {
 
     const totalMultiBlue = apiValueBlue * inputValue
     const totalMultiOficial = apiValueOficial * inputValue
-    const totalMultiEuroBlue = apiValueEuroBlue * inputValue
-    const totalMultiEuroOficial = apiValueEuroOficial * inputValue // Multiplico ambos valores
+    // const totalMultiEuroBlue = apiValueEuroBlue * inputValue
+    // const totalMultiEuroOficial = apiValueEuroOficial * inputValue // Multiplico ambos valores
 
     // console.log(totalMultiBlue + ' Valor de multi')
     // console.log('-------')
